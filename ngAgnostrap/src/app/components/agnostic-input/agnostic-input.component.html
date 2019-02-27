@@ -1,0 +1,9 @@
+  
+  <label class="col-12">{{field.label}}</label>
+  <input type="text" 
+         class="form-control col-12"
+         [placeholder]="field.label"
+         [(ngModel)]="field.value"
+         [disabled]="field.disabled"
+         [readonly]="field.readonly"
+         (blur)="onBlur()">
